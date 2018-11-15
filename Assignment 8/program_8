@@ -1,0 +1,35 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+lxi h,9000
+lxi d,9200
+mvi c,05H
+loop: mov a,m
+call Hello
+stax d
+mov a,m
+rlc
+rlc
+rlc
+rlc
+call Hello
+inx d
+stax d
+dcr c
+jnz loop
+hlt
+
+Hello: ani 0FH
+cpi 0AH
+jnc next
+adi 30H
+RET
+next: adi 37H
+RET

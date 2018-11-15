@@ -1,0 +1,20 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+lda 9000
+ani 0FH
+lda 9000
+ani F0H
+rrc
+rrc
+rrc
+rrc
+sta 9002
+hlt

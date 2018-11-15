@@ -1,0 +1,29 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+lda 2050
+call 2050
+sta 3050
+lda 2050
+rlc
+rlc
+rlc
+rlc
+call 2050
+sta 3051
+hlt
+
+2050: ani 0FH
+cpi 0AH
+jnc next
+adi 30H
+RET
+next: adi 37H
+RET

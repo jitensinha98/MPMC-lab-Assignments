@@ -1,0 +1,20 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+lhld 9000
+mov a,l
+add h
+daa
+jnc next
+inr c
+next: sta 9100
+mov a,c
+sta 9102
+hlt
