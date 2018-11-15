@@ -1,0 +1,16 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+lxi H,9050
+mov b,m
+mov a,b
+inr a
+sta 9100
+hlt

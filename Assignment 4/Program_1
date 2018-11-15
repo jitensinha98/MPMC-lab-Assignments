@@ -1,0 +1,21 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+lhld 9000
+xchg
+lhld 9002
+mov A,D
+sub H
+mov H,A
+mov A,E
+sub L
+mov L,A
+shld 9004
+hlt

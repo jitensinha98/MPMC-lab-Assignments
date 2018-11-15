@@ -1,0 +1,15 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+lda 9010
+cma
+inr a
+sta 9012
+hlt

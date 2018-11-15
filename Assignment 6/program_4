@@ -1,0 +1,29 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+lxi h,9000
+mvi a,0
+mvi b,0
+mvi c,0
+loop: mov a,m
+cpi 0FFH
+jz jump
+mov a,b
+add m
+jnc next
+inr c
+next: mov b,a
+inx h
+jmp loop
+jump: mov a,b
+sta 9100
+mov a,c
+sta 9101
+hlt

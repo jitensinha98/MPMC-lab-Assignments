@@ -1,0 +1,14 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+lhld 9000
+dad h
+dad h
+hlt

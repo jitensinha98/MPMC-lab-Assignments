@@ -1,0 +1,14 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+mvi a,21H
+RRC
+RRC
+hlt

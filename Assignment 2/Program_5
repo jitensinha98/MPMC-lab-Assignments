@@ -1,0 +1,15 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+lxi h,9000
+lda 9001
+add m
+sta 9002
+hlt

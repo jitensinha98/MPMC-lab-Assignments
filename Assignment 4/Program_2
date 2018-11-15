@@ -1,0 +1,17 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+mvi B,12H
+mvi C,2H
+
+loop:	add B
+	dcr C
+	jnz loop
+hlt

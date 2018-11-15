@@ -1,0 +1,24 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+lhld 9000
+mov d,h
+mov e,l
+lhld 9002
+mov b,h
+mov c,l
+lhld 9002
+loop: dad d
+dcx b
+mov a,b
+ora c
+jnz loop
+shld 9005
+hlt

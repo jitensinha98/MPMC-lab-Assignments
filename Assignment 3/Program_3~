@@ -1,0 +1,21 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+mvi c,05
+lda 9000
+mov b,a
+lda 9001
+add b
+jnc label
+inr c
+label: sta 9002
+mov a,c;
+sta 9003
+hlt

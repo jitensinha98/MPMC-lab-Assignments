@@ -1,0 +1,16 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+LHLD 9000
+XCHG
+LHLD 9002
+DAD D
+SHLD 9004
+hlt
